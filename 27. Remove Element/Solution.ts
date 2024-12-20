@@ -1,7 +1,6 @@
 function removeElement(nums: number[], val: number): number {
-    let k = 0;
     const newArr = nums.filter(x => x !== val);
-    k = newArr.length;
+    const k = newArr.length;
     for(let i = newArr.length-1; i < nums.length; i++) {
         newArr.push(val);
     }
